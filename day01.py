@@ -20,7 +20,6 @@ for i in range(len(l1)):
 print(total)
 
 # part 2
-from collections import Counter
 total = 0
 for i in range(len(l1)):
     cur_count = 0
