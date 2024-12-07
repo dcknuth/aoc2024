@@ -19,4 +19,7 @@ It has messy use of globals and is not DRY, but works. I like the sort function 
 ## [Day 6: Guard Gallivant](day06.py)
 Again, not dry and a little long. Brute force finished in two minutes with the luck of a non-diabolical puzzle input. Would be a good one to parallelize and might add a v2 with that later
 
-## Day 7: ???
+## [Day 7: Bridge Repair](day07.py)
+Part two took 20 seconds to run and getting a good start overall took way longer than it should have, but done.
+
+## Day 8: ???
