@@ -60,16 +60,11 @@ for y in range(len(map)):
             map[y][x] = '#'
             # test if a loop
             cur = start.copy()
-            visited = dict()
-            total = 0
             step_count = 0
             d_num = 0
             cur_d = d_list[d_num]
             while onMap(cur, map):
                 step_count += 1
-                if tuple(cur) not in visited:
-                    total += 1
-                    visited[tuple(cur)] = True
                 new_d = d_num
                 new_coord = cur.copy()
                 new_coord[0] = cur[0] + d[cur_d][0]

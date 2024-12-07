@@ -17,7 +17,9 @@ Started trying with NetworkX, but gave that up for a more standard walk in part 
 It has messy use of globals and is not DRY, but works. I like the sort function that I came up with
 
 ## [Day 6: Guard Gallivant](day06.py)
-Again, not dry and a little long. Brute force finished in two minutes with the luck of a non-diabolical puzzle input. Would be a good one to parallelize and might add a v2 with that later
+Again, not dry and a little long. Brute force finished in 82 seconds with the luck of a non-diabolical puzzle input. Would be a good one to parallelize and might add a v2 with that later
+
+**Update:** I added [a version](day06v2.py) to do part 2 in parallel and it ran in 4 seconds. It was harder to get a parallel version to run than I thought. First, I had to add a main loop and a work function. Then, there was trouble with passing multiple parameters and with variables that had to be moved outside main to make them global and accessible (yes, I could have passed them also). After that, it did use all virtual CPUs (32) and run a lot faster.
 
 ## [Day 7: Bridge Repair](day07.py)
 Part two took 20 seconds to run and getting a good start overall took way longer than it should have, but done.
