@@ -24,4 +24,7 @@ Again, not dry and a little long. Brute force finished in 82 seconds with the lu
 ## [Day 7: Bridge Repair](day07.py)
 Part two took 20 seconds to run and getting a good start overall took way longer than it should have, but done.
 
-## Day 8: ???
+## [Day 8: Resonant Collinearity](day08.py)
+Some parts to keep track of, but brute-force works and is fast for both parts
+
+## Day 9: ???
