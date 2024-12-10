@@ -27,4 +27,5 @@ Part two took 20 seconds to run and getting a good start overall took way longer
 ## [Day 8: Resonant Collinearity](day08.py)
 Some parts to keep track of, but brute-force works and is fast for both parts
 
-## Day 9: ???
+## [Day 9: Disk Fragmenter](day09.py)
+Brute force again and it took about 5 seconds for each part. Probably could have used some hashes instead of lists and cut the time down, but done
