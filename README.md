@@ -29,3 +29,8 @@ Some parts to keep track of, but brute-force works and is fast for both parts
 
 ## [Day 9: Disk Fragmenter](day09.py)
 Brute force again and it took about 5 seconds for each part. Probably could have used some hashes instead of lists and cut the time down, but done
+
+## [Day 10: Hoof It](day10.py)
+NetworkX saves the day! About two seconds for each part and written pretty quick
+
+## Day 11: ???
