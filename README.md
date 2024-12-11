@@ -33,4 +33,7 @@ Brute force again and it took about 5 seconds for each part. Probably could have
 ## [Day 10: Hoof It](day10.py)
 NetworkX saves the day! About two seconds for each part and written pretty quick
 
-## Day 11: ???
+## [Day 11: Plutonian Pebbles](day11.py)
+Part 1 works with brute force. It took way longer than it should have to come up with, remember string transitions and then just keep a count of strings. I left thought process in the one linked above. [Here](day11v2.py) is a cleaned up version
+
+## Day 12: ???
