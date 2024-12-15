@@ -1,4 +1,4 @@
-# Day 11 part 1
+# Day 11
 from collections import Counter
 from collections import defaultdict
 
