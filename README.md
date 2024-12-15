@@ -39,4 +39,7 @@ Part 1 works with brute force. It took way longer than it should have to come up
 ## [Day 12: Garden Groups](day12.py)
 Part 1 was not too bad, but part 2 was tricky and I gave up [an attempt](day12_fail.py). Sometimes it's good to just start again with a new idea and no clutter
 
-## Day 13: Claw Contraption
+## [Day 13: Claw Contraption](day13.py)
+Part 1 was about 4 seconds with brute force. Part 2 I looked at the [algebra solver](https://github.com/dcknuth/Algebra_solver/blob/master/Equations%20Solver.ipynb) I had done many years ago. I did make a silly error that cost me some debugging time though.
+
+## Day 14: Restroom Redoubt
