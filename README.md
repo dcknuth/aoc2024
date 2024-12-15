@@ -42,4 +42,7 @@ Part 1 was not too bad, but part 2 was tricky and I gave up [an attempt](day12_f
 ## [Day 13: Claw Contraption](day13.py)
 Part 1 was about 4 seconds with brute force. Part 2 I looked at the [algebra solver](https://github.com/dcknuth/Algebra_solver/blob/master/Equations%20Solver.ipynb) I had done many years ago. I did make a silly error that cost me some debugging time though.
 
-## Day 14: Restroom Redoubt
+## [Day 14: Restroom Redoubt](day14.py)
+I thought I had a nice part 1 that would be fast for a longer part 2, but it didn't work out that way. Then I tested for a tree outline, which also didn't work. It was a filled in tree, but got there eventually. This could be one that a nicer NumPy use would probably speed up a good bit
+
+## Day 15: Warehouse Woes
