@@ -45,4 +45,14 @@ Part 1 was about 4 seconds with brute force. Part 2 I looked at the [algebra sol
 ## [Day 14: Restroom Redoubt](day14.py)
 I thought I had a nice part 1 that would be fast for a longer part 2, but it didn't work out that way. Then I tested for a tree outline, which also didn't work. It was a filled in tree, but got there eventually. This could be one that a nicer NumPy use would probably speed up a good bit
 
-## Day 15: Warehouse Woes
+## [Day 15: Warehouse Woes](day15.py)
+Part 1 was non-trivial, but a simple while loop could propagate a move. For part 2 a more complex recursive check was needed to see if a move was possible and then to do the move in the Y direction. This took a good bit more code and debugging of edge cases and I needed to create a bunch of test files to handle those
+
+## [Day 16: Reindeer Maze](day16.py)
+I tried to use NetworkX again, but it was looking unusable due to the turns. However, after I was well on the way to implementing my own Dykstra's algorithm, I was given an idea to do it with extra nodes for turns. I ended up using this graph with all turns and NX. Part 2 was not too bad since NetworkX has an "all shortest" function
+
+## Day 17: Chronospatial Computer
+
+## Day 18: RAM Run
+
+## Day 19: Linen Layout
