@@ -51,8 +51,11 @@ Part 1 was non-trivial, but a simple while loop could propagate a move. For part
 ## [Day 16: Reindeer Maze](day16.py)
 I tried to use NetworkX again, but it was looking unusable due to the turns. However, after I was well on the way to implementing my own Dykstra's algorithm, I was given an idea to do it with extra nodes for turns. I ended up using this graph with all turns and NX. Part 2 was not too bad since NetworkX has an "all shortest" function
 
-## Day 17: Chronospatial Computer
+## [Day 17: Chronospatial Computer](day17.py)
+Ugg! Not the old int-code computer, reverse engineer what the program is doing puzzle! Part one is always to get the computer simulator to work, not a problem. Part two is always challenging, but I see that new entries are added on powers of 8 and I need 15, so the minimum bound is 8^15. Is there a way I could match back from the end? It took some time, but got this to both work and run in <3 seconds. I am now a full three days behind
 
 ## Day 18: RAM Run
 
 ## Day 19: Linen Layout
+
+## Day 20: Race Condition
