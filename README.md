@@ -54,8 +54,11 @@ I tried to use NetworkX again, but it was looking unusable due to the turns. How
 ## [Day 17: Chronospatial Computer](day17.py)
 Ugg! Not the old int-code computer, reverse engineer what the program is doing puzzle! Part one is always to get the computer simulator to work, not a problem. Part two is always challenging, but I see that new entries are added on powers of 8 and I need 15, so the minimum bound is 8^15. Is there a way I could match back from the end? It took some time, but got this to both work and run in <3 seconds. I am now a full three days behind
 
-## Day 18: RAM Run
+## [Day 18: RAM Run](day18.py)
+Both parts were fine using NetworkX. Again, took <3 seconds for both parts and was pretty straight forward
 
 ## Day 19: Linen Layout
 
 ## Day 20: Race Condition
+
+## Day 21: ???
