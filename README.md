@@ -60,8 +60,11 @@ Both parts were fine using NetworkX. Again, took <3 seconds for both parts and w
 ## [Day 19: Linen Layout](day19.py)
 Each part was medium tricky and I needed to cache function results to make it happen for both parts. I used the itertools lru cache function to make that part easy. Again, runs in <3 seconds for both parts
 
-## Day 20: Race Condition
+## [Day 20: Race Condition](day20.py)
+The first part I did in an inefficient way (>1 min, <2), but it worked. The second part I did more efficiently, but it still took about 10 seconds. It included my first time using a nested defaultdict
 
 ## Day 21: Keypad Conundrum
 
-## Day 22: ??
+## Day 22: Monkey Market
+
+## Day 23: ???
