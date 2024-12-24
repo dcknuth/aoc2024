@@ -63,7 +63,8 @@ Each part was medium tricky and I needed to cache function results to make it ha
 ## [Day 20: Race Condition](day20.py)
 The first part I did in an inefficient way (>1 min, <2), but it worked. The second part I did more efficiently, but it still took about 10 seconds. It included my first time using a nested defaultdict
 
-## Day 21: Keypad Conundrum
+## [Day 21: Keypad Conundrum](day21.py)
+Finally got something to run fine for part 1. Needed to just do a smallest unit (one numpad move) instead of trying to track an entire code at a time. Will update for part 2
 
 ## Day 22: Monkey Market
 
