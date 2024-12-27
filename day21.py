@@ -1,6 +1,5 @@
 # Day 21 part 1
 import networkx as nx
-import random
 
 filename = "test21.txt"
 filename = "input21.txt"
