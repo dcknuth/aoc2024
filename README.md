@@ -34,7 +34,7 @@ Brute force again and it took about 5 seconds for each part. Probably could have
 NetworkX saves the day! About two seconds for each part and written pretty quick
 
 ## [Day 11: Plutonian Pebbles](day11.py)
-Part 1 works with brute force. It took way longer than it should have to come up with, remember string transitions and then just keep a count of strings. I left thought process in the one linked above. [Here](day11v2.py) is a cleaned up version
+Part 1 works with brute force. It took way longer than it should have to come up with, remember string transitions and then just keep a count of strings. I left the thought process in the one linked above. [Here](day11v2.py) is a cleaned up version
 
 ## [Day 12: Garden Groups](day12.py)
 Part 1 was not too bad, but part 2 was tricky and I gave up [an attempt](day12_fail.py). Sometimes it's good to just start again with a new idea and no clutter
@@ -64,7 +64,7 @@ Each part was medium tricky and I needed to cache function results to make it ha
 The first part I did in an inefficient way (>1 min, <2), but it worked. The second part I did more efficiently, but it still took about 10 seconds. It included my first time using a nested defaultdict
 
 ## [Day 21: Keypad Conundrum](day21.py)
-Finally got something to run fine for part 1. Needed to just do a smallest unit (one numpad move) instead of trying to track an entire code at a time. Will update for part 2
+Finally got something to run fine for part 1. Needed to just do a smallest unit (one num pad move) instead of trying to track an entire code at a time. This approach fails early in part 2, so we need something new. Tried dropping all paths with more than one turn and that helped, but still will not finish. After much more time, I think we want to take paths that are closer to 'A' on the keypad as that will end up with fewer presses for downstream robots. For instance, from '^' to '>' you can take a path through 'v' or 'A'. Through 'A' should result in fewer downstream presses. Just turns may be enough for num pad moves. There are only four paths with options and only two of those probably matter. I made a module with that variable to just look up the paths I selected as the best. Turns out the 3->7 path matters in the example. We should go left before going up. We can do the same as for the key pad and manually edit those. Works for the short example and my input for part 1. Well, we can do 12 robot hops in reasonable time, but then it gets too slow. Is this just the lantern fish problem from 2019, similar to day 11 this year, yet again? It requires a bit of a different setup, but that approach works. I also made some bad assumptions about the best keypad paths that worked for part one. I also had trouble getting the robot count loop setup correctly. Tough day that took several days. I put part 2 [here](day21-p2.py) and I hand edited some parts of paths.py, so it it does not work for your input I would look at the numpad paths there
 
 ## Day 22: Monkey Market
 
