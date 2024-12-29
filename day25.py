@@ -1,7 +1,7 @@
 # Day 25 part 1
 
 filename = "test25.txt"
-#filename = "input25.txt"
+filename = "input25.txt"
 
 with open(filename) as f:
     ls = f.read().strip().split("\n")
@@ -32,5 +32,14 @@ while i < len(ls):
         keys.append(cur_item)
     i += 7
 
-print(locks)
-print(keys)
+total = 0
+for lock in locks:
+    for key in keys:
+        fits = True
+        for i in range(5):
+            if lock[i] + key[i] > 5:
+                fits = False
+                break
+        if fits:
+            total += 1
+print(total)

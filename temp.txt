@@ -1,0 +1,76 @@
+13 both 0
+14 1 should be 0
+
+
+bit=13 x=0 y=0 z= carry_xor='z13'
+input_xor='tgp' = carry_xor_in1='tgp' tgp
+last_carry_or='dkh' = carry_xor_in2='dkh' carry_and_in2='dkh'
+carry_or_in2='wwk' = input_and='wwk'
+carry_or_in1='tbh' = carry_and='tbh'
+ last_carry_xor='z12'
+------------------------------
+bit=14 x=1 y=1 z= carry_xor='vss'
+input_xor='ttd' = carry_xor_in1='nhg' ttd
+last_carry_or='nhg' = carry_xor_in2='ttd' carry_and_in2='nhg'
+carry_or_in2='cgt' = input_and='cgt'
+carry_or_in1='tfw' = carry_and='tfw'
+ last_carry_xor='z13'
+
+ try vss and z14
+
+ bit=21 x=0 y=0 z= carry_xor='z21'
+input_xor='mhw' = carry_xor_in1='frt' frt
+last_carry_or='frt' = carry_xor_in2='mhw' carry_and_in2='mhw'
+carry_or_in2='wdr' = input_and='hbc'
+carry_or_in1='hbc' = carry_and='wdr'
+ last_carry_xor='z20'
+------------------------------
+Error: input_and should only show in one place
+Error: 2
+bit=22 x=1 y=0 z= carry_xor='z21'
+input_xor='hjf' = carry_xor_in1='frt' frt
+last_carry_or='gjn' = carry_xor_in2='mhw' carry_and_in2='mhw'
+carry_or_in2='kdh' = input_and='kdh'
+carry_or_in1='gjn' = carry_and='wdr'
+ last_carry_xor='z21'
+
+try wdr and hbc and (mhw and frt)
+maybe wdr and mhw?
+maybe hjf and frt?
+maybe (hjf and frt) and (gjn and wdr)
+TODO: undo these and look at z21 out for 22
+no, debug out does not get set correctly
+maybe kdh and hjf
+good, next
+
+bit=30 x=1 y=1 z= carry_xor='z30'
+input_xor='rbw' = carry_xor_in1='rbw' carry_and_in1='rbw'
+last_carry_or='dfv' = carry_xor_in2='dfv' carry_and_in2='dfv'
+carry_or_in2='bjd' = input_and='bjd'
+carry_or_in1='qnv' = carry_and='qnv'
+ last_carry_xor='z29'
+------------------------------
+bit=31 x=0 y=0 z= carry_xor='kpp'
+input_xor='nrr' = carry_xor_in1='nrr' carry_and_in1='nrr'
+last_carry_or='sms' = carry_xor_in2='sms' carry_and_in2='sms'
+carry_or_in2='kpp' = input_and='pwg'
+carry_or_in1='pwg' = carry_and='z31'
+ last_carry_xor='z30'
+
+Try kpp and z31
+
+bit=34 x=0 y=0 z= carry_xor='z34'
+input_xor='rfv' = carry_xor_in1='qfs' carry_and_in1='qfs'
+last_carry_or='qfs' = carry_xor_in2='rfv' carry_and_in2='rfv'
+carry_or_in2='hdk' = input_and='hdk'
+carry_or_in1='fgp' = carry_and='fgp'
+ last_carry_xor='z33'
+------------------------------
+bit=35 x=0 y=1 z= carry_xor='sgj'
+input_xor='bbc' = carry_xor_in1='bbc' carry_and_in1='bbc'
+last_carry_or='qfs' = carry_xor_in2='jkb' carry_and_in2='jkb'
+carry_or_in2='hdk' = input_and='z35'
+carry_or_in1='fgp' = carry_and='ptb'
+ last_carry_xor='z34'
+
+ Try sgj and z35

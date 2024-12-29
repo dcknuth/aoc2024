@@ -57,6 +57,39 @@ print(int(''.join(bits), 2))
 #  and see where things go wrong. There are too many possible combos to do
 #  by brute force
 
+# look for least significant bit deltas
+print('gate result =:')
+for i in range(23):
+    print(f'{45-i:^4}', end='')
+print()
+for c in bits[:23]:
+    print(f'{c:^4}', end='')
+print()
+x_val = []
+y_val = []
+for wire in wires.keys():
+    if wire[0] == 'x':
+        if wires[wire]:
+            bit = '1'
+        else:
+            bit = '0'
+        x_val.append([wire, bit])
+    if wire[0] == 'y':
+        if wires[wire]:
+            bit = '1'
+        else:
+            bit = '0'
+        y_val.append([wire, bit])
+x_val.sort(reverse=True)
+x_bits = [x[1] for x in x_val]
+y_val.sort(reverse=True)
+y_bits = [x[1] for x in y_val]
+print('Intended =:')
+good_bits = [c for c in bin(int(''.join(x_bits), 2) + int(''.join(y_bits), 2))]
+for c in good_bits[2:25]:
+    print(f'{c:^4}', end='')
+print()
+
 # reset wires and gates and add a lookup for all inputs
 wires = dict()
 gates = dict()
@@ -99,6 +132,7 @@ for bit in range(45):
     if input_and != first_carry and len(by_input[input_and]) > 1:
         print("Error: input_and should only show in one place")
     for g_name, in1, in2, g_type in by_input[input_and]:
+        last_carry_or = carry_or
         carry_or = g_name
         carry_or_in1 = in1
         carry_or_in2 = in2
@@ -130,9 +164,14 @@ for bit in range(45):
         y = 1
     else:
         y = 0
-    print(f'{bit=} {x=} {y=} {input_xor=} = {carry_xor_in1=} {carry_and_in1}')
+    print(f'{bit=} {x=} {y=} z= {carry_xor=}')
+    print(f'{input_xor=} = {carry_xor_in1=} {carry_and_in1=}')
     print(f'{last_carry_or=} = {carry_xor_in2=} {carry_and_in2=}')
     print(f'{carry_or_in2=} = {input_and=}')
     print(f'{carry_or_in1=} = {carry_and=}')
-    print(f'this z= {carry_xor=} {last_carry_xor=}')
+    print(f' {last_carry_xor=}')
     print('-'*30)
+
+# had to swap these
+swaps = ['sgj', 'z35', 'kpp', 'z31', 'kdh', 'hjf', 'vss', 'z14']
+print(','.join(sorted(swaps)))

@@ -72,7 +72,8 @@ Part one was just following the instructions and so was easy. Part 2 looks harde
 ## [Day 23: LAN Party](day23.py)
 Not too bad and a good practice run with NetworkX. Got to learn some new functions it has
 
-## Day 24: Crossed Wires
-Part 1 is fine and didn't take too long. Part 2 is a debug-the-system type problem. The system is a bitwise added and I will guess it is a "full" adder given the gates we implemented. So... can we pull up each pair of bits in turn and check that the gates involved with those are doing [this](https://en.wikipedia.org/wiki/Adder_(electronics)#/media/File:Fulladder.gif)?
+## [Day 24: Crossed Wires](day24.py)
+Part 1 is fine and didn't take too long. Part 2 is a debug-the-system type problem. The system is a bitwise added and I will guess it is a "full" adder given the gates we implemented. So... can we pull up each pair of bits in turn and check that the gates involved with those are doing [this](https://en.wikipedia.org/wiki/Adder_(electronics)#/media/File:Fulladder.gif)? There were many extra, non-damaging swaps, so I needed to get the real addition result, change that to binary and compare with the result from my input. After that, I started manually fixing swaps starting with the least significant missmatch. There is some output noise to help me debug and to make the portion of the bit checking I was working on fit in the terminal
 
-## Day 25: Code Chronicle
+## [Day 25: Code Chronicle](day25.py)
+Not too bad as is usual for day 25 part 1.
