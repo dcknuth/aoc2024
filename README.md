@@ -73,5 +73,6 @@ Part one was just following the instructions and so was easy. Part 2 looks harde
 Not too bad and a good practice run with NetworkX. Got to learn some new functions it has
 
 ## Day 24: Crossed Wires
+Part 1 is fine and didn't take too long. Part 2 is a debug-the-system type problem. The system is a bitwise added and I will guess it is a "full" adder given the gates we implemented. So... can we pull up each pair of bits in turn and check that the gates involved with those are doing [this](https://en.wikipedia.org/wiki/Adder_(electronics)#/media/File:Fulladder.gif)?
 
 ## Day 25: Code Chronicle
